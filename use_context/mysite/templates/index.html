@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>This is index file</h2>
+    <h3>Author: {{author}}</h3>
+    <h3>Age: {{age}}</h3>
+    <h2>List length: {{list | length}}</h2>
+    <h2>List: {{list | random}}</h2>
+
+    <!-- loop -->
+    <ul>
+      {%if list%} {% for fruit in list%}
+      <li>{{fruit}}</li>
+      {%endfor%} {%else%}
+      <li>No fruit list</li>
+      {%endif%}
+    </ul>
+  </body>
+</html>
