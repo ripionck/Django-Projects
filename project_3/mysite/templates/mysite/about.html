@@ -1,0 +1,10 @@
+<!-- about.html -->
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+  {{ block.super }}
+  <h2 class="text-center fs-1 fw-bold my-4">About</h2>
+  <div class="w-50 mx-auto mt-5">
+    <img src="{% static 'about.jpg' %}" alt="About">
+  </div>
+{% endblock content %}
