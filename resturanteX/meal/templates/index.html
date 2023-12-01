@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+  <div class="row mt-5">
+    <div class="col-6">
+      <div class="text-center">
+        <h3 class="pt-5">The</h3>
+        <h1>Restaurant</h1>
+        <p>At Delilli Cellars</p>
+        <p>
+          At RestauranteX, we believe in creating not just meals, but moments that linger in your memory long after you leave. Join us for an unforgettable journey of culinary delights at RestauranteX.
+        </p>
+      </div>
+    </div>
+    <div class="col-6">
+      <img class="home-img"
+           src="{% static 'images/restaurant.jpg' %}"
+           alt="Restaurant">
+    </div>
+  </div>
+{% endblock content %}

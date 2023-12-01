@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2 class="text-center my-5 fs-2">Our Most Demand Items</h2>
+  <div class="container">
+    <div class="row">
+      {% for category in categories %}
+        <div class="col-4 mb-5">
+          <div class="card" style="width: 18rem;">
+            <img src={{ category.strCategoryThumb }} class="card-img-top" alt={{ category.strCategory }}>
+            <div class="card-body">
+              <h5 class="card-title">{{ category.idCategory }}</h5>
+              <h5 class="card-title">{{ category.strCategory }}</h5>
+              <p class="card-text">{{ category.strCategoryDescription | truncatechars:14 }}</p>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+{% endblock content %}
