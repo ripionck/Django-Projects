@@ -14,16 +14,15 @@
   <body>
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Task Management</a>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link active"
-                 aria-current="page"
-                 href="{% url 'add_task' %}">Add Task</a>
-              <a class="nav-link" href="{% url 'add_category' %}">Add Category</a>
-              <a class="nav-link" href="{% url 'homepage' %}">Show Tasks</a>
-            </div>
+        <div class="w-50 mx-auto">
+          <div class="navbar-nav">
+            <a class="nav-link border-1 rounded-2 bg-secondary text-white"
+               aria-current="page"
+               href="{% url 'add_task' %}">Add Task</a>
+            <a class="nav-link mx-5 border-1 rounded-2 bg-secondary text-white"
+               href="{% url 'add_category' %}">Add Category</a>
+            <a class="nav-link border-1 rounded-2 bg-secondary text-white"
+               href="{% url 'homepage' %}">Show Tasks</a>
           </div>
         </div>
       </nav>

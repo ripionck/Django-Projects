@@ -6,3 +6,9 @@ class TaskForm(forms.ModelForm):
     class Meta:
         model = Task
         fields = '__all__'
+        labels = {
+            'isCompleted': 'Is Completed?',
+        }
+        widgets = {
+            'taskDescription': forms.Textarea(attrs={'rows': 5}),
+        }
