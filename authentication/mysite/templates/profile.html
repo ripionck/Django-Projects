@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+  <h3>Welcome to profile</h3>
+  <h4>
+    Hello! <span class="text-primary">{{ user }}</span>
+  </h4>
+  {% if messages %}
+    {% for m in messages %}<p class="bg-success p-3 text-white">{{ m }}</p>{% endfor %}
+  {% endif %}
+  <br />
+  <p>
+    <a class="btn btn-primary" href="{% url 'change_password' %}">Change Your Password</a>
+    <a class="btn btn-success" href="{% url 'set_password' %}">Change Your Password Without Old Password</a>
+    <a class="btn btn-info" href="{% url 'change_user_data' %}">Change Your Data</a>
+  </p>
+{% endblock %}
