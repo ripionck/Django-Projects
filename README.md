@@ -2,41 +2,12 @@
 
 A brief description of your project.
 
-## Table of Contents
+## Technologies Used
 
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technologies Used](#technologies-used)
-- [Directory Structure](#directory-structure)
-- [Contributing](#contributing)
-- [License](#license)
+- **Python:** The backend language used for server-side development.
+- **Django:** A high-level Python web framework for building web applications.
+- **HTML:** The markup language used for structuring the project's web pages.
+- **CSS:** The stylesheet language used for styling the HTML content.
+- **Bootstrap:** A front-end framework for building responsive and visually appealing web pages.
+- **Vanilla JavaScript:** Plain JavaScript without any additional libraries or frameworks.
 
-## Overview
-
-Provide a high-level overview of your project. Explain its purpose, key features, and any other relevant information.
-
-## Features
-
-Highlight the main features of your project.
-
-## Installation
-
-Include step-by-step instructions on how to set up and run your project locally.
-
-```bash
-# Clone the repository
-git clone https://github.com/your-username/your-repo.git
-
-# Change into the project directory
-cd your-repo
-
-# Install dependencies
-pip install -r requirements.txt
-
-# Run migrations
-python manage.py migrate
-
-# Start the development server
-python manage.py runserver
